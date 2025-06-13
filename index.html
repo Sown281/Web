@@ -2,19 +2,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Animated Social Icons</title>
+  <title>My Profile</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-    }.social-icons {
+      text-align: center;
+      padding: 20px;
+    }h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p.bio {
+  font-size: 18px;
+  max-width: 600px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.social-icons {
   display: flex;
   gap: 30px;
 }
@@ -100,6 +115,10 @@
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
   .icon {
     width: 60px;
     height: 60px;
@@ -115,6 +134,8 @@
   </style>
 </head>
 <body>
+  <h1>Xin chào, mình là Sơn 😎</h1>
+  <p class="bio">Tôi là một người đam mê công nghệ, thích vọc vạch code, làm web đơn giản cho đến mấy thứ rối rắm. Follow mình để xem nhiều thứ hay ho hơn!</p>
   <div class="social-icons">
     <a href="#" target="_blank" class="icon github" title="Visit GitHub">
       <i class="fab fa-github"></i>
